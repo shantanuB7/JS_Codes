@@ -1,0 +1,372 @@
+html {
+    scroll-behavior: smooth;
+    transition: all 0.3s;
+}
+
+body {
+    font-family: 'Roboto'
+    width: 100% !important;
+    height: 100% !important;
+    font-weight: 300;
+}
+
+
+h2 {
+    margin: 0 0 20px 0;
+    font-weight: 300;
+    font-size: 42px;
+    color: #444;
+}
+
+h3 {
+    font-size: 22px;
+    font-weight: 300;
+    margin-top: 20px;
+}
+
+h4 {
+   font-size: 22px;
+   font-weight: 300;
+   color: #444;
+}
+
+p {
+    font-weight: 300;
+    font-size: 16px;
+}
+
+hr {
+    margin-bottom: 20px;
+    height: 2px;
+    width: 70px;
+    text-align: center;
+    position: relative;
+    background: #0ba2db;
+    border: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+.section-title {
+    padding-bottom: 70px;
+}
+
+.section-title p {
+    font-size: 18px;
+}
+
+.btn-custom:hover {
+    color: #fff;
+    background: #444;
+}
+
+.pricing-table .btn-system:hover,
+.pricing-table .btn-system.border-btn:hover{
+    color: #fff;
+    background: #444;
+}
+
+ 
+/*---------------------------------HEADER--------------------------------------*/
+.intro {
+    width: 100%;
+    padding: 0;
+    background: url(img/intro-bg.jpg) no-repeat center center;
+    background-color: #e5e5e5;
+    background-size: cover;
+    
+}
+
+.intro .overlay {
+    background: rgba(255, 255, 255, 0.2);
+    width: 100%;
+    height: 100%;
+}
+
+header .intro-text {
+    
+    padding-top: 300px;
+    padding-bottom: 200px;
+    text-align: center;
+    width: 1170px;
+}
+
+.intro h1 {
+    color: #0ba2db;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-size: 74px;
+    font-weight: 600;
+}
+
+.intro p {
+    color: #444;
+    font-size: 28px;
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.btn-custom {
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #0ba2db;
+    border: 0;
+    padding: 14px 20px;
+    margin: 0;
+    font-size: 16px;
+    border-radius: 2px;
+    margin-top: 20px;
+}
+
+
+/*---------------------------------NAVBAR--------------------------------------*/
+
+#navbar a.navbar-brand {
+    font-size: 20px;
+    color: #444;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+#navbar a.navbar-brand i.far {
+    color: 0ba2db;
+}
+
+#navbar {
+    padding: 20px;
+    height: 90px;
+    border-bottom-width: 1px;
+    margin-bottom: 20px;
+}
+
+#navbar.navbar-expand-md .navbar-nav > li > a {
+    text-transform: uppercase;
+    color: #444;
+    font-weight: 400;
+    letter-spacing: 1px;
+    height: 36px;
+    padding: 15px;
+}
+
+.back {
+    
+    background: #f6f6f6;
+    padding: 10px 0 !important;
+    border-bottom: 1px solid #ddd !important;
+    height: 71px !important;
+}
+
+#navbar.navbar-expand-md .navbar-nav > li > a:hover {
+    color: #0ba2db;
+}
+
+#navbar.navbar-expand-md .navbar-nav > li > a.active {
+    color: #0ba2db;
+}
+
+.back a.active {
+    color: #0ba2db !important;
+}
+
+button.navbar-toggler.collapsed:hover {
+    background: #0ba2db;
+    color: #fff;
+}
+
+/*---------------------------------ABOUT--------------------------------------*/
+
+#about {
+    padding: 120px 0;
+}
+
+
+
+.text-center {
+    text-align: center;
+}
+
+#about .about-text {
+    padding-left: 10px;
+}
+
+#about img {
+    display: inline-block;
+    border-color: #0ba2db;
+    border-radius: 20px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+#about p {
+    margin: 30px 0;
+    line-height: 24px;
+}
+
+#about ul {
+    padding: 0;
+    list-style: none;
+}
+
+#about .about-text ul > li:before {
+    content: "✓";
+    padding-right: 10px;
+    color: #0ba2db;
+}
+
+#about .about-text li {
+    font-size: 16px;
+    margin-bottom: 6px;
+    margin-left: 10px;
+}
+
+
+/*---------------------------------SERVICES--------------------------------------*/
+
+#services {
+    padding: 120px 0;
+    background: #f6f6f6;
+}
+
+#services .fa {
+    font-size: 48px;
+    color: #0ba2db;
+    margin: 20px 0;
+}
+
+
+/*---------------------------------PRICING--------------------------------------*/
+
+#pricing {
+    padding: 120px 0 140px 0;
+}
+
+#pricing .pricing-table {
+    border: 1px solid #e4e4e4;
+    text-align: center;
+    position: relative;
+    background-color: #fff;
+    border-radius: 4px;
+}
+
+#pricing .pricing-table:hover {
+    z-index: 2;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1)
+}
+
+.pricing-table .plan-name {
+    padding: 15px 0;
+    box-shadow: 0 0 20px rgba(0,0,0,0.05) inset;
+    border-bottom: 1px solid #eee;
+}
+
+.pricing-table .plan-name h3 {
+    font-size: 32px;
+    font-weight: 300;
+}
+
+.pricing-table .plan-price {
+    padding: 25px 0;
+}
+
+.pricing-table .plan-price .price-value {
+    font-size: 38px;
+    line-height: 52px;
+    color: #444;
+}
+
+.pricing-table .plan-list li:first-child {
+    border-top: 1px solid #eee;
+}
+
+.pricing-table .plan-list li {
+    padding: 8px;
+    font-size: 16px;
+    border-bottom: 1px solid #eee;
+}
+
+#pricing .pricing-table ul {
+    padding: 0;
+}
+
+.pricing-table .plan-signup {
+    padding: 25px 0;
+}
+
+.pricing-table .btn-system:last-child {
+    margin-right: 0;
+}
+
+.pricing-table .btn-system {
+    padding: 10px 25px;
+    display: inline-block;
+    color: #fff;
+    background-color: #0ba2db;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+#pricing .highlight-plan {
+    z-index: 1;
+    margin: -15px 0;
+}
+
+#pricing .pricing-table.highlight-plan .plan-name {
+    background: #0ba2db;
+    color: #fff;
+    padding: 25px 0;
+    border-radius: 4px 4px 0 0;
+}
+
+#pricing .pricing-table.highlight-plan .plan-signup {
+    background: #0ba2db;
+    padding: 30px 0;
+    border-radius: 0 0 4px 4px;
+}
+
+.pricing-table .btn-system.border-btn {
+    background-color: transparent;
+    border: 1px solid;
+}
+
+
+/*---------------------------------CONTACT--------------------------------------*/
+
+#contact {
+    background: #f6f6f6;
+    padding: 120px 0 60px 0;
+}
+
+#contact .social {
+    margin-top: 80px;
+}
+
+#contact ul {
+    padding-left: 0;
+}
+
+#contact .social ul li {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+#contact .social i.fab {
+    font-size: 26px;
+    padding: 4px;
+    color: #0ba2db; 
+}
+
+#contact .social i.fab:hover {
+    color: #444;
+}
+
+
+/*---------------------------------FOOTER--------------------------------------*/
+
+footer {
+    background: #e6e6e6;
+    color: #888;
+    padding: 30px 0 25px 0;
+    border: 1px solid #fff;
+}

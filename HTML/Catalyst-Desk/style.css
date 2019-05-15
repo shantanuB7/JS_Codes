@@ -1,0 +1,55 @@
+body {
+    font-family: 'Roboto'
+    width: 100% !important;
+    height: 100% !important;
+}
+
+
+/*---------------------------------HEADER--------------------------------------*/
+.intro {
+    display: table;
+    width: 100%;
+    padding: 0;
+    background: url(img/intro-bg.jpg) no-repeat center center;
+    background-color: #e5e5e5;
+    background-size: cover;
+    
+}
+
+.intro .overlay {
+    background: rgba(255, 255, 255, 0.2)
+}
+
+header .intro-text {
+    
+    padding-top: 300px;
+    padding-bottom: 200px;
+    text-align: center;
+}
+
+.intro h1 {
+    color: #0ba2db;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-size: 74px;
+    font-weight: 600;
+}
+
+.intro p {
+    color: #444;
+    font-size: 28px;
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.btn-custom {
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #0ba2db;
+    border: 0;
+    padding: 14px 20px;
+    margin: 0;
+    font-size: 16px;
+    border-radius: 2px;
+    margin-top: 20px;
+}

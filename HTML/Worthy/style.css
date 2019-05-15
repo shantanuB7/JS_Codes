@@ -1,0 +1,637 @@
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css)
+
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: hidden;
+    font-family: "Arial";
+}
+
+.space {
+    padding: 20px 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+h1 {
+    font-size: 38px;
+    font-weight: 700;
+}
+
+
+/*-----------------------------------------NAVBAR------------------------------------------*/
+
+#navbar {
+    color: #fff;
+    background-color: rgba(0,0,0,0.10);
+    padding: 10px 0;
+}
+
+#navbar h5{
+    font-size: 36px;
+    line-height: 54px;
+    color: #fff;
+}
+#navbar .brand{
+    display: block;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+
+#navbar .navbar-nav li a {
+    color: #fff;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-size: 18px;
+    font-weight: 300;
+    transition: all .3s ease-in-out;
+}
+
+.nav-colored {
+    background: rgba(0,0,0,0.95);
+    padding: 5px 0;
+}
+
+#navbar .navbar-nav li a:hover {
+    color: #55acee;
+}
+
+#navbar .navbar-nav li a.active {
+    color: #55acee;
+}
+
+.navbar-toggler-icon {
+    position: relative;
+    float: right;
+}
+
+.brand-name {
+    font-size: 36px;
+}
+
+.navbar-brand span {
+    font-size: 12px;
+    position: absolute;
+    top: 64px;
+    left: 283px;
+}
+
+i.fa-bars {
+    color: #fff;
+}
+
+
+/*-----------------------------------------HEADER------------------------------------------*/
+
+.header {
+    background: url(images/banner.jpg) center center no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.overlay {
+    background: rgba(0,0,0,.5);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.heading-title {
+    vertical-align: middle;
+    color: #fff;
+    padding-top: 300px;
+    padding-bottom: 200px;
+}
+
+.heading-title h1 {
+    font-size: 60px;
+}
+
+.heading-title h1 span {
+    color: #339beb;
+}
+
+.heading-title p {
+    font-size: 21px;
+}
+
+
+/*-----------------------------------------ABOUT------------------------------------------*/
+
+.about {
+    padding: 80px 0;
+}
+
+.features {
+    list-style: none;
+    padding-left: 0;
+}
+
+.features li i {
+    padding-right: 10px;
+    color: #55acee;
+}
+
+h1 span {
+    color: #339beb;
+}
+
+.accordion {
+  background-color: #000;
+  color: #fff;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: all 0.4s ease-in-out;
+  margin-top: 5px;
+}
+
+.card {
+    border-radius: 0;
+    margin-top: 5px;
+}
+
+.card-header {
+    background: #222;
+    border: none;
+}
+
+.card-header a {
+    width: 100%;
+}
+
+.card-header:hover {
+    background: #55acee;
+}
+
+.card-header:first-child {
+    border-radius: 0;
+}
+
+/*
+.card .card-header a.collapsed {
+    background-color: #55acee;
+}
+*/
+
+.card-header .card-link {
+    color: #fff;
+    padding: 12px 35px 12px 15px;
+}
+
+.card-body {
+    background: #fafafa;
+}
+
+.card-header a.collapsed::after {
+    content: "\f196";
+    float: right;
+}
+
+.card-header a::after {
+    content: "\f147";
+    float: right;
+}
+
+/*-----------------------------------------SERVICES------------------------------------------*/
+
+#services {
+    background: url(images/bg-image-1.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+.service-overlay {
+    background: rgba(85, 172, 238, 0.7);
+}
+
+.service-wrapper {
+    padding: 80px 0;
+    color: #fff;
+}
+
+.media .fas {
+    font-size: 24px;
+    width: 25px;
+    height: 40px;
+    padding: 0 5px;
+    text-align: center;
+}
+
+.media .fab {
+    font-size: 24px;
+    width: 25px;
+    height: 40px;
+    padding: 0 5px;
+}
+
+.media-right {
+    display: table-cell;
+    vertical-align: top;
+    padding-left: 15px;
+}
+
+.media-left {
+    display: table-cell;
+    vertical-align: top;
+    padding-right: 18px;
+}
+
+.back-blue {
+    background: #55acee;
+    color: #fff;
+    border: none;
+}
+
+
+/*-----------------------------------------PORTFOLIO----------------------------------------*/
+
+.portfolio{
+	padding: 5% 0;
+}
+.portfolio .heading h1{
+	font-size: 38px;
+	line-height: 42px;
+	font-weight: 700;
+	color: #333333;
+	margin-bottom: 20px;
+}
+.portfolio .heading p{
+	font-size: 21px;
+	font-weight: 300;
+	line-height: 32px;
+	color: #333333;
+	margin-bottom: 50px;
+	max-width: 55%;
+	margin: 0 auto;
+}
+
+.portfolio .categories ul, .portfolio .categories ol{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	margin-bottom: 20px;
+}
+.portfolio .categories{
+    text-align: center;
+    padding: 35px 0 20px 0;
+}
+.portfolio .categories ul li{
+	display: inline-block;
+}
+.portfolio .categories ol li a {
+    cursor: pointer;
+    border: 1px solid #cacaca;
+    color: #666666;
+    padding: 8px 20px;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 300;
+}
+.portfolio .categories ol li a:hover,.portfolio .categories ol li.active a{
+	background-color: #55acee;
+    border-color: #55acee;
+    color: #fff;
+}
+.portfolio-item{
+	height: auto;
+    border: 1px solid #ccc;
+    margin-bottom:20px;
+}
+.port-img{
+    position:relative;
+    overflow:hidden;
+}
+.port-heading{
+	cursor: pointer;
+}
+.port-heading h4{
+    font-size: 14px;
+    text-align: center;
+    font-weight: 400;
+    text-transform: uppercase;
+    padding: 15px 0 10px 0;
+    color: #999999;
+    margin-bottom: 0;
+}
+.port-heading h4:hover{
+	background: #55acee;
+	color: #fff;
+}
+.port-overlay {
+	transition: .5s ease;
+	position: absolute;
+	top: 0;
+	left: 0;
+	text-align: center;
+	color: #fff;
+	background: rgba(85,172,238,1);
+	width: 100%;
+	right: 0;
+	bottom: 0;
+	opacity: 0;
+	cursor: pointer;
+	height: 100%;
+	transform: scale(0);
+}
+.hover-text i{
+    transition: all 0.3s;
+    font-size: 20px;
+    padding-top: 28%;
+    text-align: center;
+}
+.hover-text small{
+    display: block;
+    padding-top: 16%;
+}
+.port-img:hover .port-overlay {
+  opacity: 0.8;
+  transform: scale(1);
+  background: #339BEA;
+}
+.modal-dialog{
+	max-width: 70%;
+}
+.modal-content{
+	border-radius: 0;
+}
+.modal-header {
+    background-color: #55acee;
+}
+.modal-header .close{
+	color: #fff;
+	opacity: 1;
+}
+.modal-title{
+	font-size: 18px;
+	line-height: 24px;
+	color: #fff;
+}
+.modal-body h3{
+	font-size: 22px;
+	line-height: 24px;
+	color: #333333;
+	font-weight: 500;
+}
+.modal-body p{
+	font-size: 15px;
+	line-height: 22px;
+	font-weight: 400;
+	color: #333333;
+}
+.modal-footer button{
+	border: 1px solid #ccc;
+    border-radius: 0;
+    padding: 6px 40px;
+    color: #55acee;
+}
+.modal-footer button:hover{
+	background: #55acee;
+	color: #fff;
+}
+
+/*-----------------------------------------Clients------------------------------------------*/
+
+.trans-blue {
+    background: rgba(85, 172, 238, 0.7);
+}
+
+#clients {
+    background: url(images/bg-image-2.jpg) center center no-repeat;
+    background-size: cover;
+    color: #fff;
+}
+
+.clients-overlay {
+    background: rgba(0,0,0,0.7)
+}
+
+.clients-wrapper {
+    padding: 80px 0;
+}
+
+.media-heading {
+    font-size: 22px;
+}
+
+.logo-wrapper {
+    padding: 15px 0;
+}
+
+.back-black {
+    background: #222222;
+}
+
+
+/*-----------------------------------------CONTACT------------------------------------------*/
+
+#contact {
+    color: #212529;
+    padding: 80px 0;
+}
+
+.locate {
+    list-style: none;
+    padding-left: 0;
+    font-size: 18px;
+}
+
+.locate li {
+    padding-bottom: 15px;
+}
+
+.locate i {
+    padding-right: 10px;
+}
+
+.social-icons {
+    list-style: none;
+}
+
+.social-icons li {
+    display: inline-block;
+    font-size: 36px;
+    margin: 10px 25px 10px 0;
+}
+
+.social-icons li a {
+    color: #333333;
+    transition: all .4s ease-in-out;
+}
+
+.social-icons li a i.fa-facebook-f:hover {
+    color: #3b5998;
+}
+
+.social-icons li a i.fa-twitter:hover {
+    color: #55acee;
+}
+
+.social-icons li a i.fa-google-plus-g:hover {
+    color: #dd4b39;
+}
+
+.social-icons li a i.fa-skype:hover {
+    color: #00aff0;
+}
+
+.social-icons li a i.fa-linkedin-in:hover {
+    color: #0976b4;
+}
+
+.social-icons li a i.fa-youtube:hover {
+    color: ##b31217;
+}
+
+.social-icons li a i.fa-flickr:hover {
+    color: #ff0084;
+}
+
+.social-icons li a i.fa-pinterest:hover {
+    color: #cb2027;
+}
+
+.form-group {
+    position: relative;
+}
+
+.form-group i.fa-user{
+    position: absolute;
+    top: 10px;
+    left: 511px;
+    color: #ccc;
+}
+
+/*
+@media screen and (min-width:360px) {
+    .form-group i.fa-user{
+    position: absolute;
+    top: 10px;
+    left: 307px;
+    color: #ccc;
+}
+    
+    .form-group i.fa-envelope{
+    position: absolute;
+    top: 66px;
+    left: 307px;
+    color: #ccc;
+}
+
+.form-group i.fa-pencil-alt{
+    position: absolute;
+    top: 121px;
+    color: #ccc;
+    left: 307px;
+}
+}
+*/
+
+.form-group i.fa-envelope{
+    position: absolute;
+    top: 10px;
+    left: 511px;
+    color: #ccc;
+}
+
+.form-group i.fa-pencil-alt{
+    position: absolute;
+    top: 10px;
+    color: #ccc;
+    left: 511px;
+}
+
+.form-control {
+    border-radius: 0;
+    height: 45px;
+}
+
+.btn-default {
+    color: #55acee;
+    border: 1px solid #ccc;
+    transition: all .4s ease-in-out;
+}
+
+.btn-default:hover {
+    background: #55acee;
+    color: #fff;
+}
+
+.btn {
+    padding: 8px 15px;
+    font-size: 14px;
+    min-width: 160px;
+    text-align: center;
+    border-radius: 0;
+    text-transform: uppercase;
+}
+
+#footer {
+    background-color: #fafafa;
+    border-top: 1px solid #f3f3f3;
+    border-bottom: 1px solid #f3f3f3;
+    padding: 40px 0;
+}
+
+.input-group-text {
+    background: transparent;   
+}
+
+
+/*-------------------------------------------MODAL-------------------------*/
+.modal-dialog{
+	max-width: 70%;
+}
+.modal-content{
+	border-radius: 0;
+}
+.modal-header {
+    background-color: #55acee;
+}
+.modal-header .close{
+	color: #fff;
+	opacity: 1;
+}
+.modal-title{
+	font-size: 18px;
+	line-height: 24px;
+	color: #fff;
+}
+.modal-body h3{
+	font-size: 22px;
+	line-height: 24px;
+	color: #333333;
+	font-weight: 500;
+}
+.modal-body p{
+	font-size: 15px;
+	line-height: 22px;
+	font-weight: 400;
+	color: #333333;
+}
+.modal-footer button{
+	border: 1px solid #ccc;
+    border-radius: 0;
+    padding: 6px 40px;
+    color: #55acee;
+}
+.modal-footer button:hover{
+	background: #55acee;
+	color: #fff;
+}

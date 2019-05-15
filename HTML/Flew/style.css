@@ -1,0 +1,721 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Raleway";
+    overflow-x: hidden;
+    font-size: 16px;
+    color: #7f7f7f;
+}
+
+p {
+    margin-bottom: 30px;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    color: #000;
+    font-weight: 400;
+    margin: 0 0 30px 0;
+}
+
+h2 {
+    color: #000;
+}
+
+h3 {
+    color: #000;
+    font-weight: 400;
+    margin: 0 0 30px 0;
+}
+
+.btn {
+    margin-right: 4px;
+    margin-bottom: 4px;
+    font-size: 16px;
+    font-weight: 400;
+    border-radius: 30px;
+}
+
+.btn-primary {
+    background: #27e1ce;
+    color: #fff;
+    border: 2px solid #27e1ce;
+}
+
+.btn-primary:hover {
+    background: #27e1ce !important;
+    color: #fff !important;
+    border: 2px solid #27e1ce;
+}
+
+.form-control {
+    box-shadow: none;
+    background: transparent;
+    border: 2px solid rgba(0,0,0,0.1);
+    height: 54px;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.form-control:focus {
+    box-shadow: none;
+    border-color: #27e1ce;
+}
+
+.btn-primary.btn-outline {
+    background: transparent;
+    border: 2px solid #27e1ce;
+    color: #27e1ce;
+}
+
+.btn-sm {
+    padding: 5px 20px;
+}
+
+
+/*----------------------------------------NAVBAR-------------------------------------------------*/
+
+#nav a.navbar-brand {
+    font-size: 30px;
+    font-weight: 700;
+    color: #000;
+}
+
+#nav a.navbar-brand::after {
+    color: #27e1ce;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    position: absolute;
+    
+}
+
+#nav ul li a {
+    color: #000;
+    font-size: 18px;
+    padding: 15px;
+    transition: all 0.3s cubic-beizer(0.175,0.885,0.32,1.275)
+}
+
+#nav ul li a:hover {
+    color: #27e1ce;
+}
+
+#nav ul li.sign {
+    margin-left: 20px;
+    margin-top: 14px;    
+}
+
+#nav ul li.sign a {
+    padding: 7px 16px !important;
+    border: 2px solid #27e1ce;
+    color: #27e1ce;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+#nav ul li.sign a:hover {
+    background: #27e1ce;
+    color: #fff;
+}
+
+.img-slide {
+    width: 100%;
+    float: left;
+    margin-right: -100%;
+    position: relative;
+    opacity: 1;
+    display: block;
+    transition: opacity 0.6s ease 0s;
+    z-index: 2;
+    height: 984px;
+    min-height: 700px;
+}
+
+.img-slid1 {
+    background-image: url(images/slide_1.jpg) center center no-repeat;
+}
+
+
+/*----------------------------------------HEADER-------------------------------------------------*/
+
+.carousel-caption {
+    display: table-cell;
+    vertical-align: middle;
+    min-height: 431px;
+}
+
+.carousel-caption h2 {
+    font-size: 70px;
+    font-weight: 400;
+    color: #fff;
+    margin: 0 0 30px 0;
+}
+
+@media screen and (max-width:768px) {
+    .carousel-caption h2 {
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    blockquote.testimony {
+        width: 100%;
+    }
+}
+
+.carousel-indicator {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 15;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    padding-left: 0;
+    margin-right: 15%;
+    margin-left: 15%;
+    list-style: none;
+}
+
+.carousel-indicator li{
+    box-sizing: content-box;
+    flex: 0 1 auto;
+    width: 10px;
+    height: 10px;
+    margin-right: 6px;
+    margin-left: 6px;
+    text-indent: -999px;
+    cursor: pointer;
+    background-color: rgba(255,255,255,0.2);
+    background-clip: padding-box;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    opacity: .5;
+    transition: opacity .6s ease;
+    border-radius: 50%;
+}
+
+.carousel-indicator li.active {
+    background-color: #fff;
+}
+
+#head .carousel-inner img {
+    height: 700px;
+    width: 100%;
+}
+
+/*----------------------------------------FEATURES-------------------------------------------------*/
+
+#features {
+    padding: 112px 0;
+}
+
+#features h2 {
+    margin-bottom: 20px;
+    font-weight: 700;
+    
+}
+
+#features .services {
+    position: relative;
+}
+
+#features .services i {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 40px;
+    color: #27e1ce;
+}
+
+#features .services .desc {
+    padding-left: 70px;
+}
+
+#features .services .desc h3 {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+
+/*----------------------------------------PROJECTS-------------------------------------------------*/
+
+#projects {
+    padding: 112px 0;
+    background: #f7f7f7;
+}
+
+#projects h2 {
+    margin-bottom: 20px;
+    font-weight: 700;
+    
+}
+
+#projects .item-grid {
+    width: 100%;
+    background: #fff;
+    margin-bottom: 50px;
+    box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.11);
+    transition: 0.4s;
+}
+
+#projects .item-grid:hover {
+    box-shadow: 0px 14px 25px -2px rgba(0,0,0,0.14);
+    top: -2px;
+}
+
+.image {
+    height: 300px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center center;
+}
+
+.image1 {
+        background-image: url(images/image_1.jpg);
+}
+
+.image2 {
+    background-image: url(images/image_2.jpg);
+}
+
+.image3 {
+    background-image: url(images/image_3.jpg);
+}
+
+.image4 {
+    background-image: url(images/image_4.jpg);
+}
+
+.image5 {
+    background-image: url(images/image_5.jpg);
+}
+
+.image6 {
+    background-image: url(images/image_6.jpg);
+}
+
+#projects .item-grid .v-align {
+    padding: 30px;
+}
+
+#projects .item-grid .v-align h3 {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+#projects .item-grid .v-align h5 {
+    color: rgba(0,0,0,0.3);
+    font-size: 14px;
+}
+
+.btn.with-arrow {
+    position: relative;
+    transition: 0.3s;
+}
+
+.btn.with-arrow:hover {
+    padding-right: 50px;
+}
+
+.btn.with-arrow i {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    margin-top: -8px;
+    transition: 0.2s;
+}
+
+.btn.with-arrow:hover i {
+    visibility: visible;
+    opacity: 1;
+    color: #fff;
+    right: 18px;
+}
+
+
+/*----------------------------------------CLIENTS-------------------------------------------------*/
+
+#clients {
+    padding: 112px 0;
+}
+
+#clients .carousel-item img{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.carousel-indicators {
+    bottom: -71px;
+}
+
+.carousel-indicators li {
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    margin-left: 7px;
+    margin-right: 7px;
+    background-color: #e6e6e6;
+    margin-top: 30px;
+}
+
+.carousel-indicators li.active {
+    background: transparent;
+    border: 2px solid #27e1ce;
+    margin-top: 37px;
+}
+
+blockquote {
+    border: none;
+    margin: 0 auto;
+    width: 72%;
+    position: relative;
+    padding-bottom: 30px;
+}
+
+blockquote p {
+    font-size: 20px;
+    line-height: 1.6em;
+    color: #1a1a1a;
+}
+
+/*----------------------------------------BLOG-------------------------------------------------*/
+
+#blog {
+    padding: 112px 0;
+    background: #f7f7f7;
+}
+
+.img1 {
+    background-image: url(images/image_1.jpg);
+}
+
+.img2 {
+    background-image: url(images/image_2.jpg);
+}
+
+#blog .item-grid {
+    width: 100%;
+    background: #fff;
+    margin-bottom: 50px;
+    box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.11);
+    transition: 0.4s;  
+}
+
+#blog .item-grid .v-align {
+    padding: 30px;
+}
+
+#blog .item-grid .v-align h5 {
+    color: rgba(0,0,0,0.3);
+    font-size: 14px;
+}
+
+#blog .item-grid:hover {
+    box-shadow: 0px 14px 25px -2px rgba(0, 0, 0, 0.14); 
+    top: -2;
+}
+
+
+/*----------------------------------------PRICING-------------------------------------------------*/
+
+#pricing {
+    padding: 112px 0;
+    background: #fcfcfc;
+}
+
+.price-box {
+    text-align: center;
+    background: #fff;
+    margin-bottom: 40px;
+    padding: 30px;
+    box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.11);
+    transition: 0.3s;
+}
+
+#pricing .price-box .btn-select-plan {
+    padding: 10px 20px;
+    background: #5bc0de;
+    color: #fff;
+}
+
+#pricing .price-plan {
+    margin: 0 0 50px 0;
+    padding: 0;
+    font-size: 13px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #888f94;
+}
+
+#pricing .price {
+    font-size: 72px;
+    color: #6d6d6d;
+    line-height: 50px;
+}
+
+#pricing .price .currency {
+    font-size: 30px;
+    top: -0.9em;
+    padding-right: 10px;
+}
+
+#pricing .price small {
+    font-size: 13px;
+    display: block;
+    text-transform: uppercase;
+    color: #888f94;
+}
+
+#pricing .price-plan span {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 0;
+    color: #d5d8db;
+}
+
+#pricing .price-plan.price-plan-offer {
+    margin-bottom: 24px;
+}
+
+#pricing .price-box.popular .btn-select-plan {
+    background: #27e1ce;
+}
+
+#pricing .price-box:hover {
+    box-shadow: 0px 14px 25px -2px rgba(0,0,0,0.14);
+    top: -2px;
+}
+
+
+/*----------------------------------------UPDATE-------------------------------------------------*/
+
+.back-img {
+    background-image: url(images/slide_2.jpg);
+}
+
+#update {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    padding: 7em 0;
+    position: relative;
+}
+
+#update .overlay {
+    background: rgba(0,0,0,0.7);
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+}
+
+#update h3 {
+    color: #fff;
+}
+
+
+/*----------------------------------------FOOTER-------------------------------------------------*/
+
+#footer {
+    padding: 112px 0;
+    background: #262626;
+}
+
+#footer h3 {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+}
+
+#footer .float {
+    float: left;
+    margin-right: 10%;
+}
+
+#footer ul {
+    padding: 0;
+    margin: 0;
+}
+
+#footer ul li {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 10px 0;
+}
+
+#footer ul li a {
+    color: rgba(255,255,255,0.5);
+    text-decoration: none;
+}
+
+.icons li a {
+    font-size: 22px;
+    margin: 0;
+    padding: 2px;
+}
+
+.icons li a i:hover {
+    color: #fff;
+}
+
+.copyright {
+    border-top: 1px solid rgba(255,255,255,0.1);
+    margin-top: 40px;
+    padding: 40px 0 0 0;
+}
+
+
+/*--------------------------------------------------------------------------------
+                                WORK PAGE
+--------------------------------------------------------------------------------*/
+
+#head .design {
+    font-size: 20px;
+    color: #fff;
+}
+
+#head .design i {
+    color: #d9534f;
+}
+
+#head .design a {
+    color: #27e1ce;
+}
+
+
+/*--------------------------------------------------------------------------------
+                                HISTORY PAGE
+--------------------------------------------------------------------------------*/
+
+#history {
+    padding: 112px 0;
+}
+
+#history h2 {
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+
+/*------------------------------------TEAM----------------------------------------*/
+
+.heading {
+    margin-bottom: 30px;
+}
+
+.heading h2 {
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+#team {
+    background: rgba(0,0,0,0.03);
+    padding: 112px 0;
+}
+
+#team .social {
+    text-align: center;
+}
+
+.social li {
+    list-style: none;
+    display: inline-block;
+}
+
+.social li a {
+    display: inline-block;
+    font-size: 22px;
+    color: #000;
+    margin: 0;
+    padding: 2px;
+}
+
+.social li a:hover {
+    color: #27e1ce;
+}
+
+#team img {
+    margin-bottom: 24px;
+}
+
+#team h3 {
+    margin: 0 0 20px 0;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+#team h4 {
+    margin: 0 0 20px 0;
+    font-weight: 400;
+    color: rgba(0,0,0,0.4);
+    font-size: 18px;
+}
+
+#team ul {
+    padding: 0;
+}
+
+#pleasure {
+    padding: 112px 0;
+}
+
+#contact {
+    padding: 112px 0;
+}
+
+.info {
+    padding: 0;
+    margin-bottom: 64px;
+}
+
+.info li {
+    list-style: none;
+    margin: 0 0 20px 0;
+    position: relative;
+    padding-left: 40px;
+    
+}
+
+.info li i {
+    top: 0.3em;
+    left: 0;
+    font-size: 22px;
+    color: #27e1ce; 
+    padding-right: 40px;
+    position: absolute;
+    color: #27e1ce;
+}
+
+.info li a {
+    color: #27e1ce;
+}
+
+.item-block h3 {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.price-box.popular .price {
+    color: #27e1ce !important;
+}
+
+.btn-primary {
+    background-color: #27e1ce;
+    border-color: #27e1ce;
+}

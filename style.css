@@ -1,0 +1,291 @@
+#ball {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    transition: all 1s;
+}
+
+#field {
+    width: 200px;
+    height: 150px;
+    border: 10px solid black;
+    background-color: #00FF00;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+th,td {
+    border: 1px solid black;
+    padding: 3px;
+    text-align: center;
+}
+
+#hours {
+    color: red;
+}
+
+#minutes {
+    color: green;
+}
+
+#seconds {
+    color: blue;
+}
+
+button {
+    margin: 50px;
+}
+
+ .tooltip {
+      position: fixed;
+      z-index: 100;
+
+      padding: 10px 20px;
+
+      border: 1px solid #b3c9ce;
+      border-radius: 4px;
+      text-align: center;
+      color: #333;
+      background: #fff;
+      box-shadow: 3px 3px 3px rgba(0, 0, 0, .3);
+     opacity: 1;
+    }
+
+
+#largeImg {
+  border: solid 1px #ccc;
+  width: 550px;
+  height: 400px;
+  padding: 5px;
+}
+
+
+#thumbnail a {
+  border: solid 1px #ccc;
+  width: 100px;
+  height: 100px;
+  padding: 3px;
+  margin: 2px;
+  float: left;
+  overflow: hidden
+    
+    
+}
+
+#thumbnail a:hover {
+  border-color: #FF9900;
+}
+
+#thumbnail li {
+  list-style: none;
+}
+
+#thumbnail {
+  margin: 0;
+  padding: 0;
+}
+
+
+.slider {
+  border-radius: 5px;
+  background: #E0E0E0;
+  background: linear-gradient(left top, #E0E0E0, #EEEEEE);
+  width: 310px;
+  height: 15px;
+  margin: 5px;
+}
+
+.thumb {
+  width: 10px;
+  height: 25px;
+  border-radius: 3px;
+  position: relative;
+  left: 10px;
+  top: -5px;
+  background: blue;
+  cursor: pointer;
+}
+
+.invalid { border-color: red; }
+  #error { color: red }
+
+
+.view,
+.edit {
+  height: 150px;
+  width: 400px;
+  font-family: sans-serif;
+  font-size: 14px;
+  display: block;
+}
+
+.view {
+  /* padding + border = 3px */
+  padding: 2px;
+  border: 1px solid black;
+}
+
+.edit-td .edit-area {
+  border: none;
+  margin: 0;
+  padding: 0;
+  display: block;
+  resize: none;
+  /* remove resizing handle in Firefox */
+
+  outline: none;
+  /* remove outline on focus in Chrome */
+
+  overflow: auto;
+  /* remove scrollbar in IE */
+}
+
+.edit-controls {
+  position: absolute;
+}
+
+.edit-td {
+  position: relative;
+  padding: 0;
+}
+
+
+td {
+  width: 150px;
+  white-space: nowrap;
+  text-align: center;
+  vertical-align: middle;
+  padding: 10px;
+}
+
+.nw {
+  background-color: #999;
+}
+
+.n {
+  background-color: #03f;
+  color: #fff;
+}
+
+.ne {
+  background-color: #ff6;
+}
+
+.w {
+  background-color: #ff0;
+}
+
+.c {
+  background-color: #60c;
+  color: #fff;
+}
+
+.e {
+  background-color: #09f;
+  color: #fff;
+}
+
+.sw {
+  background-color: #963;
+  color: #fff;
+}
+
+.s {
+  background-color: #f60;
+  color: #fff;
+}
+
+.se {
+  background-color: #0c3;
+  color: #fff;
+}
+
+
+
+/*113*/
+
+#prompt-form {
+  display: inline-block;
+  padding: 5px 5px 5px 70px;
+  width: 200px;
+  border: 1px solid black;
+  background: white url(https://en.js.cx/clipart/prompt.png) no-repeat left 5px;
+  vertical-align: middle;
+}
+
+#prompt-form-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  display: none;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+#prompt-form-container:before {
+  display: inline-block;
+  height: 100%;
+  content: '';
+  vertical-align: middle;
+}
+
+#cover-div {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9000;
+  width: 100%;
+  height: 100%;
+  background-color: gray;
+  opacity: 0.3;
+}
+
+#prompt-form input[name="text"] {
+  display: block;
+  margin: 5px;
+  width: 180px;
+}
+/*------------------------------114----------------*/
+
+#jet {
+    width: 50px;
+    height: 50px;
+   /* For 115---- transition: all 4s cubic-bezier(0,0,1,2);*/
+}
+
+
+/*------------------------------116----------------*/
+
+.circle {
+    transition-property: width,height,margin-left, margin-top;
+    transition-duration: 4s;
+    position: fixed;
+    border-radius: 50%;
+    background-color: red;
+    transform: translateX(-50%) translateY(-50%)
+}
+
+
+/*-----------------------------117------------------*/
+
+#field117 {
+  height: 200px;
+  border-bottom: 3px black groove;
+  position: relative;
+}
+
+#ball117 {
+  position: absolute;
+  cursor: pointer;
+}
+
+
+/*---------------------------------138---------------------*/
+
+.message-ball {
+    text-align: center;
+    padding: 50px;
+}

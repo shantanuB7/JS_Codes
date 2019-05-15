@@ -1,0 +1,256 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+    color: #868f90;
+    font-family: 'Roboto Slab'
+}
+
+h1,h2,h3 {
+    color: #000;
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-weight: 300;
+}
+
+a {
+    color: #e32929;
+}
+
+a:hover {
+    color: #a91616;
+}
+
+p {
+    margin-bottom: 1.5rem;
+}
+
+.sect-head {
+    margin-bottom: 1em;
+}
+
+/*---------------------------------NAVBAR-----------------------------*/
+
+#navbar {
+    padding: 0;
+}
+
+.navbar-brand {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 20px;
+    font-weight: 400;
+    background: #e32929;
+    padding: 30px 25px;
+    color: #fff;
+}
+
+.navbar-nav li a {
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #ccc;
+    font-weight: 400;
+    padding: 10px 15px;
+    
+}
+
+.navbar-nav li a:hover {
+    color: #e32929;
+}
+
+.navbar-nav li.active a {
+    color: #e32929;
+    padding: 10px 15px;
+}
+
+/*---------------------------------MAIN-----------------------------*/
+
+.main {
+    padding: 112px 0;
+}
+
+
+/*---------------------------------PORTFOLIO-----------------------------*/
+
+.portfolio {
+    padding: 2em 4em;
+    background: #fafafa;
+}
+
+@media screen and (max-width: 768px) {
+    .portfolio {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+.port-img {
+    background-size: cover;
+    width: 100%;
+    height: 150%;
+    overflow: hidden;
+}
+
+.img-1 {
+    background: url(images/work_1.jpg) center center no-repeat;  
+}
+
+.img-2 {
+    background: url(images/work_2.jpg) center center no-repeat;
+}
+
+.img-3 {
+    background: url(images/work_3.jpg) center center no-repeat;
+}
+
+.img-4 {
+    background: url(images/work_4.jpg) center center no-repeat;
+}
+
+@media screen and (max-width: 768px) {
+    .port-img {
+        height: 400px;
+    }
+}
+
+.portfolio-desc {
+    background: #fff;
+    width: 100%;
+    padding: 4em;
+    font-size: 20px;
+}
+
+@media screen and (max-width:768px) {
+    .portfolio-desc {
+        padding: 2em;
+    }
+}
+
+.portfolio-desc h2 {
+    font-size: 30px;
+    font-weight: 300;
+    line-height: 34px;
+}
+
+.btn {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    padding: 14px 20px;
+}
+
+.btn-primary {
+    background: #e32929;
+    border: 2px solid #e32929;
+}
+
+.btn:hover {
+    background: #fff;
+    color: #444;
+    border: 2px solid #444;
+}
+
+
+/*---------------------------------TEAM-----------------------------*/
+
+.team {
+    padding: 7em 0;
+}
+
+.team-photo {
+    margin-bottom: 30px;
+}
+
+.team h3 {
+    font-size: 18px;
+    line-height: 22px;
+    padding-bottom: 20px;
+    color: #000;
+}
+
+.divider {
+    content: "";
+    width: 30px;
+    height: 2px;
+    background: #e32929;
+    margin-bottom: 30px;
+}
+
+.social {
+    padding: 0;
+    margin: 0;
+}
+
+.social a {
+    color: #ccc;
+}
+
+.social li {
+    padding-right: 10px;
+    margin: 0;
+    list-style: none;
+    display: inline-block;
+}
+
+.social a i {
+    font-size: 20px;
+}
+
+
+/*---------------------------------FEATURES-----------------------------*/
+
+.features {
+    padding: 7em 0;
+    background: #fafafa;
+}
+
+.features-wrapper {
+    margin-bottom: 30px;
+}
+
+.features-wrapper h3 {
+    font-size: 18px;
+}
+
+.features-wrapper i {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 40px;
+    color: #e32929;
+}
+
+.features-wrapper .features-desc {
+    padding-left: 70px;
+}
+
+,features-wrapper .features-desc h3 {
+    margin-top: 0;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+
+/*---------------------------------FOOTER-----------------------------*/
+
+#footer {
+    padding: 5em 0;
+}
+
+
+
+/*-------------------------------------------------------------------------------
+                                RIGHT-SIDEBAR PAGE
+-------------------------------------------------------------------------------*/
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+.check-list li {
+    margin-bottom: 10px;
+}

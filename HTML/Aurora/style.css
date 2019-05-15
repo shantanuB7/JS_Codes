@@ -1,0 +1,862 @@
+html {
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+ul {
+    list-style: none;
+}
+
+
+/*-----------------------------------NAVBAR---------------------------------*/
+
+.navbar {
+    padding-left: 12%;
+    background-image: linear-gradient(to bottom,rgba(0,0,0,0.7), transparent);
+    width: 100%;
+    height: 75px;
+}
+
+.navbar-brand {
+    position: absolute;
+    left: 14%;
+    top: 0;
+    font-size: 22px;
+    font-weight: 600;
+    color: #e6e7e8;
+    text-shadow: 0 0 20px black;
+}
+
+.navbar-brand:hover {
+    color: #e6e7e8;
+}
+
+.navbar-brand span {
+    display: block;
+    font-size: 15px;
+    color: rgba(255,255,255,0.6);
+    padding-left: 1px;
+    text-shadow: 0 0 20px black;
+}
+
+.navbar-toggler:focus {
+    outline: none;
+}
+
+.navbar-toggler-icon {
+    width: 5px;
+    height: 35px;
+    background-color: #c2c1c5;
+}
+
+.navbar-toggler {
+    border: none;
+    transform: rotate(90deg);
+    padding: 10px;
+}
+
+.navbar-nav {
+    background: rgba(18,18,18,0.9);
+    width: 23%;
+    opacity: 0.8;
+}
+
+.navbar-nav li a {
+    padding: 5px 5px 10px 5px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.navbar-nav li a span:hover {
+    padding-left: 5px;
+}
+
+.navbar-nav .nav-ml{
+	margin-left: 50px;
+}
+.navbar-nav li a img{
+	width: 30px;
+	margin: 0 12px 0 10px;
+}
+.social-icons{
+	padding-right: 10%;
+	position: absolute;
+    right: 0;
+    top: 20px;
+}
+.social-icons ul{
+	list-style: none;
+	margin: 0;
+}
+.social-icons ul li{
+	display: inline-block;
+}
+.social-icons ul li a{
+	color: #CDCFD1;
+	padding-right: 35px;
+}
+
+
+/*-----------------------------------START---------------------------------*/
+
+.banner{
+    width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: -500;
+	height: 100%;
+}
+.banner-img{
+	background: url(img/hero_background.jpg) repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -400;
+    
+    background-size: cover;
+    background-position: 50% 50%;
+    
+    width: 100%;
+    height: 100%;
+}
+.banner-gradient{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 500%;
+	height: 500%;
+	background: url("img/hero_gradient.png") repeat;
+	
+	background-size: cover;
+	background-position: 80% 80%;
+    
+	z-index: -300;
+	opacity: 0.9;
+	
+    -webkit-animation-name: HeroGradient;
+    animation-name: HeroGradient;
+    -webkit-animation-duration: 55.5s;
+    animation-duration: 55.5s;
+    -webkit-animation-timing-function: ease;
+    animation-timing-function: ease;
+     -webkit-animation-iteration-count: infinite; 
+    animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+}
+.banner-pattern{
+	background: url("img/hero_pattern.png") repeat-x;
+	width: 100%;
+	height: 100%;
+	background-size: 100%;
+	background-position: bottom left;
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0.5;
+	z-index: -200;
+}
+.banner-content{
+	position: absolute;
+	top: 70px;
+	left: 0;
+	z-index: -100;
+	width: 100%;
+	padding: 5% 0;
+	color: #fff;
+}
+.banner-content h1{
+    font-size: 78px;
+    letter-spacing: 5px;
+    font-weight: 700;
+}
+.banner-content h3{
+    font-size: 50px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding: 10px 0 0 25px;
+}
+.banner-content .banner-photo{
+	background: url("img/hero_photo.jpg");
+	background-size: cover;
+	border-radius: 50%;
+	position: relative;
+	width: 200px;
+	height: 200px;
+}
+.banner-content .banner-desc p{
+	font-size: 19px;
+	padding: 20px 80px 0;
+	text-align: center;
+	line-height: 1.8;
+	font-weight: 300;
+}
+.banner-content .banner-btn{
+	padding: 30px 0;
+}
+.banner-content .banner-btn button{
+    background: transparent;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    padding: 12px 50px;
+    font-size: 22px;
+    color: #fff;
+}
+.banner-content .banner-btn i{
+	padding-left: 10px;
+}
+.banner-content .banner-btn button:hover{
+	background: #fff;
+	color: #000;
+}
+.banner-content .banner-btn p{
+	font-size: 22px;
+	font-weight: 400;
+	line-height: 28px;
+	padding-top: 15px;
+}
+
+
+/*-----------------------------------SKILLS---------------------------------*/
+
+.content {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    top: 825px;
+    
+}
+
+.experience {
+    background-color: rgba(67,55,76,0.99);
+    background: linear-gradient(to bottom right, #360033, #0b8793, 2100px);
+    background: -webkit-linear-gradient(top left, #360033, #0b8793 2100px);
+    position: relative;
+}
+
+.arrow {
+    width: 100%;
+    height: 40px;
+    background-image: url(img/content_hollow-arrow.png);
+    background-position: 50% 50%;
+    position: relative;
+    top: -40px;
+    left: 0;
+    opacity: 1;
+}
+
+.experience-wrapper {
+    position: relative;
+    z-index: 200;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 110px;
+    padding-bottom: 200px;
+}
+
+.section-header-title {
+    color: white;
+    font-size: 38px;
+    font-weight: 600;
+    padding-left: 60px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid rgba(255,255,255,0.1);
+    background-image: url(img/title_square.svg);
+    background-size: 40px 40px;
+    background-position: 10px top;
+    background-repeat: no-repeat;
+}
+
+.section-header-subtitle {
+    color: rgba(255,255,255,0.8);
+    font-size: 22px;
+    font-weight: 300;
+    padding-top: 5px;
+    padding-left: 100px;
+}
+
+.exp-icons {
+    margin-bottom: 20px;
+}
+
+.exp-icon--html5 {
+    position: relative;
+    margin-top: 100px;
+    float: left;
+    width: 100%;
+    height: 120px;
+    background-size: 100px 100px;
+    background-image: url(img/exp/exp_html5.svg);
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+
+.exp-icon--css3 {
+    position: relative;
+    margin-top: 100px;
+    float: left;
+    width: 100%;
+    height: 120px;
+    background-size: 100px 100px;
+    background-image: url(img/exp/exp_css3.svg);
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+
+.exp-icon--js {
+    position: relative;
+    margin-top: 100px;
+    float: left;
+    width: 100%;
+    height: 120px;
+    background-size: 100px 100px;
+    background-image: url(img/exp/exp_javascript.svg);
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+
+.exp-icon--sass {
+    position: relative;
+    margin-top: 100px;
+    float: left;
+    width: 100%;
+    height: 120px;
+    background-size: 100px 100px;
+    background-image: url(img/exp/exp_sass.svg);
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+
+.exp-icon--jquery {
+    position: relative;
+    margin-top: 100px;
+    float: left;
+    width: 100%;
+    height: 120px;
+    background-size: 100px 100px;
+    background-image: url(img/exp/exp_jquery.svg);
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+
+.exp-icon--git {
+    position: relative;
+    margin-top: 100px;
+    float: left;
+    width: 100%;
+    height: 120px;
+    background-size: 100px 100px;
+    background-image: url(img/exp/exp_git.svg);
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+
+.exp-icon--wordpress {
+    position: relative;
+    margin-top: 100px;
+    float: left;
+    width: 100%;
+    height: 120px;
+    background-size: 100px 100px;
+    background-image: url(img/exp/exp_wordpress.svg);
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+
+.exp-icon--ps {
+    position: relative;
+    margin-top: 100px;
+    float: left;
+    width: 100%;
+    height: 120px;
+    background-size: 100px 100px;
+    background-image: url(img/exp/exp_photoshop.svg);
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+
+.exp-icon--illustrator {
+    position: relative;
+    margin-top: 100px;
+    float: left;
+    width: 100%;
+    height: 120px;
+    background-size: 100px 100px;
+    background-image: url(img/exp/exp_illustrator.svg);
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+
+.exp-icon--fireworks {
+    position: relative;
+    margin-top: 100px;
+    float: left;
+    width: 100%;
+    height: 120px;
+    background-size: 100px 100px;
+    background-image: url(img/exp/exp_fireworks.svg);
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+
+.exp-icon--bootstrap {
+    position: relative;
+    margin-top: 100px;
+    float: left;
+    width: 100%;
+    height: 120px;
+    background-size: 100px 100px;
+    background-image: url(img/exp/exp_bootstrap.svg);
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+
+.exp-icon--foundation {
+    position: relative;
+    margin-top: 100px;
+    float: left;
+    width: 100%;
+    height: 120px;
+    background-size: 100px 100px;
+    background-image: url(img/exp/exp_foundation-glasses.svg);
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+
+.exp-desc {
+    display: block;
+    position: absolute;
+    font-size: 19px;
+    font-weight: 400;
+    left: 50%;
+    bottom: -25px;
+    transform: translate(-50%,0);
+    color: rgba(255,255,255,0.9);
+    width: 200px;
+    text-align: center;
+}
+
+
+/*-----------------------------------FEATURES---------------------------------*/
+
+.features {
+    background-color: rgba(67,55,76,0.99);
+    background: linear-gradient(to bottom right, #354b15, #1b5752, 2100px);
+    background: -webkit-linear-gradient(top left, #354b15, #1b5752, 2100px);
+    position: relative;
+}
+
+.features-wrapper {
+    padding-top: 160px;
+    padding-bottom: 200px;
+}
+
+.features-elements-wrapper {
+    margin-top: 20px;
+}
+
+.features-elements {
+    margin-top: 80px;
+}
+
+.features-heading {
+    font-size: 23px;
+    line-height: 1;
+    padding-bottom: 3px;
+    font-weight: 600;
+    color: rgba(255,255,255,0.9);
+    border-bottom: 2px solid rgba(255,255,255,0.1);
+}
+
+.features-image-mobile {
+    background-size: 100px 100px;
+    background-position: top center;
+    width: 25%;
+    min-height: 100px;
+    height: 100%;
+    float: left;
+    background-image: url(img/feature/feature_mobile.svg);
+    background-repeat: no-repeat;
+}
+
+.features-image-jigsaw {
+   background-size: 100px 100px;
+    background-position: top center;
+    width: 25%;
+    min-height: 100px;
+    height: 100%;
+    float: left;
+    background-image: url(img/feature/feature_newest.svg);
+    background-repeat: no-repeat; 
+}
+
+.features-image-bulb {
+   background-size: 100px 100px;
+    background-position: top center;
+    width: 25%;
+    min-height: 100px;
+    height: 100%;
+    float: left;
+    background-image: url(img/feature/feature_intuitive.svg);
+    background-repeat: no-repeat; 
+}
+
+.features-image-pc {
+   background-size: 100px 100px;
+    background-position: top center;
+    width: 25%;
+    min-height: 100px;
+    height: 100%;
+    float: left;
+    background-image: url(img/feature/feature_browsers.svg);
+    background-repeat: no-repeat; 
+}
+
+.features-image-client {
+   background-size: 100px 100px;
+    background-position: top center;
+    width: 25%;
+    min-height: 100px;
+    height: 100%;
+    float: left;
+    background-image: url(img/feature/feature_clients.svg);
+    background-repeat: no-repeat; 
+}
+
+.features-image-fast {
+   background-size: 100px 100px;
+    background-position: top center;
+    width: 25%;
+    min-height: 100px;
+    height: 100%;
+    float: left;
+    background-image: url(img/feature/feature_fast.svg);
+    background-repeat: no-repeat; 
+}
+
+.features-image-seo {
+   background-size: 100px 100px;
+    background-position: top center;
+    width: 25%;
+    min-height: 100px;
+    height: 100%;
+    float: left;
+    background-image: url(img/feature/feature_seo.svg);
+    background-repeat: no-repeat; 
+}
+
+.features-image-secure {
+   background-size: 100px 100px;
+    background-position: top center;
+    width: 25%;
+    min-height: 100px;
+    height: 100%;
+    float: left;
+    background-image: url(img/feature/feature_secure.svg);
+    background-repeat: no-repeat; 
+}
+
+.features-image-semantic {
+   background-size: 100px 100px;
+    background-position: top center;
+    width: 25%;
+    min-height: 100px;
+    height: 100%;
+    float: left;
+    background-image: url(img/feature/feature_semantic.svg);
+    background-repeat: no-repeat; 
+}
+
+.features-image-source {
+   background-size: 100px 100px;
+    background-position: top center;
+    width: 25%;
+    min-height: 100px;
+    height: 100%;
+    float: left;
+    background-image: url(img/feature/feature_sourcefiles.svg);
+    background-repeat: no-repeat; 
+}
+
+.features-text {
+    float: left;
+    width: 65%;
+}
+
+.features-desc {
+    margin-top: 2px;
+    font-size: 15px;
+    font-weight: 300;
+    letter-spacing: 0.3px;
+    line-height: 1.3;
+    color: rgba(255,255,255,0.7);
+}
+
+
+/*-----------------------------------PORTFOLIO---------------------------------*/
+
+.portfolio {
+    background-color: #33404e;
+    background-image: linear-gradient(to bottom left, #3a6073, #16222a 2100px);
+    position: relative;
+    overflow: hidden;
+}
+
+.portfolio-wrapper {
+    padding-top: 150px;
+    padding-bottom: 200px;
+}
+
+.nav-pills .nav-item {
+    display: inline-block;
+}
+
+.nav-pills img {
+    float: left;
+    width: 190px;
+    border-radius: 3px;
+    cursor: pointer;
+    overflow: hidden;
+    border: none;
+}
+
+.nav-pills li a.active > img {
+    opacity: 1; 
+}
+
+.nav-pills .nav-link.active {
+    background-color: transparent;
+}
+
+.nav-pills li > a > img {
+    opacity: 0.5;
+}
+
+.nav-pills li > a > img:hover {
+    opacity: 1;
+}
+
+.content-wrapper {
+    position: relative;
+    min-height: 460px;
+}
+
+.content-title {
+    border-bottom: 2px solid rgba(255,255,255,0.1);
+    font-size: 38px;
+    color: rgba(255,255,255,0.9);
+    font-weight: 600;
+    padding-left: 30px;
+    padding-bottom: 10px;
+    margin-top: 5px;
+}
+
+.content-title-desc {
+    font-size: 21px;
+    font-weight: 400;
+    margin-left: 1px;
+    color: rgba(255,255,255,0.7);
+}
+
+.content-point-title {
+    color: rgba(255,255,255,0.9);
+    font-weight: 500;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.content-point-desc {
+    color: rgba(255,255,255,0.7);
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 1.3;
+}
+
+.content-button {
+    display: inline-block;
+    margin-left: 30px;
+    font-size: 16px;
+    font-weight: 300;
+    color: rgba(255,255,255,0.9);
+    width: 250px;
+    height: 44px;
+    border-radius: 3px;
+    border-width: 1px;
+    line-height: 41px;
+    text-align: center;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.ghost-button {
+    position: relative;
+    border: 2px solid rgba(255,255,255,0.9);
+    color: rgba(255,255,255,0.9);
+    transition: color 150ms ease 1ms;
+    vertical-align: middle;
+    overflow: hidden;
+}
+
+/*-----------------------------------CONTACT---------------------------------*/
+
+.contact {
+    background-color: #3b3b3b;
+    background: linear-gradient(to top left, #232526, #414345 2100px);
+    position: relative;
+    overflow: hidden;
+}
+
+.contact-wrapper {
+    padding-top: 150px;
+    padding-bottom: 200px;
+}
+
+.icons-wrapper > i {
+    text-align: center;
+    color: #fff;
+    font-size: 100px;
+}
+
+.icons-wrapper {
+    text-align: center;
+}
+
+.contact-desc {
+    color: #fff;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.spacer {
+    font-size: 0;
+    width: 68%;
+    margin: 0 auto;
+    margin-top: 100px;
+    height: 2px;
+    background: rgba(255,255,255,0.05)
+}
+
+.contact-form {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.contact-wrapper {
+    display: block;
+    width: 100%;
+    text-align: left;
+    font-size: 0;
+}
+
+.contact-label {
+    color: rgba(255,255,255,0.9);
+    font-size: 15px;
+    font-weight: 300;
+    margin-left: 10px;
+}
+
+.info-wrapper {
+    display: inline-block;
+    width: 50%;
+    font-size: 0;
+    text-align: left;
+    float: left;
+}
+
+.input-wrapper {
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.contact-button-wrapper {
+    width: 46%;
+    height: 139px;
+    font-size: 24px;
+    font-weight: 600;
+    border: 2px solid rgba(255,255,255,0.9);
+    border-radius: 3px;
+    margin-top: 43px;
+    display: inline-block;
+    float: right;
+    position: relative;
+}
+
+.contact-button-wrapper:hover {
+    color: #000;
+    background: rgba(255,255,255,0.9);
+}
+
+.contact-button-wrapper:hover .contact-icon-wrapper i {
+    transform: translateY(-5%) rotate(49deg);
+    color: #000;
+}
+
+.contact-icon-wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    font-size: 0;
+    transition: transform 600ms ease-in;
+}
+
+.contact-icon-wrapper i {
+    transition: transform 200ms ease-in-out;
+    font-size: 70px;
+    color: #fff;
+}
+
+.contact-button-wrapper input{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: none;
+    box-shadow: none;
+    border: none;
+    outline: none;
+    line-height: 44px;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+
+/*-----------------------------------FOOTER---------------------------------*/
+
+.footer {
+    background: #ebebeb;
+    position: relative;
+    overflow: hidden;
+}
+
+.footer-wrapper {
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+
+.footer-copyright {
+    font-size: 26px;
+    float: left;
+    font-weight: 600;
+    opacity: 0.2;
+    margin-top: 54px;
+}
+
+.footer-image {
+    width: 350px;
+    height: 100px;
+    background-image: url(img/footer_image.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center right;
+    float: right;
+}
